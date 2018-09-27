@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/img_Logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/logo" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="60dp">
+
+        <ImageView
+            android:id="@+id/img_edittxt_email"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/icon_style"
+            android:padding="8dp"
+            android:src="@drawable/ic_email_black_24dp"
+            android:tint="@color/white" />
+
+        <EditText
+            android:id="@+id/edittxt_email_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/img_edittxt_email"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/img_edittxt_email"
+            android:background="@drawable/edittxt_style"
+            android:hint="@string/Email_hint"
+            android:paddingLeft="20dp"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="15dp">
+
+        <ImageView
+            android:id="@+id/img_edittxt_senha"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/icon_style"
+            android:padding="8dp"
+            android:src="@drawable/ic_lock_outline_black_24dp"
+            android:tint="@color/white" />
+
+        <EditText
+            android:id="@+id/edittxt_senha_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/img_edittxt_senha"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/img_edittxt_senha"
+            android:background="@drawable/edittxt_style"
+            android:hint="@string/Senha_hint"
+            android:paddingLeft="20dp"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button_style"
+        android:text="@string/btn_login"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/txt_cadastrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:text="@string/txt_semconta"
+        android:textSize="15dp" />
+
+</LinearLayout>
